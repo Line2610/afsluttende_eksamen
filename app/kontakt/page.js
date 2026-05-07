@@ -69,7 +69,7 @@ export default function Kontakt() {
     <section className="relative text-white">
       {/* Baggrundsbillede */}
       <div className="absolute inset-0">
-        <Image src="/kontakt-baggrund.webp" alt="Kontakt os baggrundsbillede" fill className="object-cover" priority />
+        <Image src={"/assets/kontakt-baggrund.webp"} alt="Kontakt os baggrundsbillede" fill className="object-cover" priority />
 
         {/* Farveoverlay over billede */}
         <div className="absolute inset-0 z-10 bg-black/40" />
