@@ -693,6 +693,8 @@ function Home() {
         lineNumber: 5,
         columnNumber: 5
     }, this);
+    //TURBOPACK unreachable
+    ;
 }
 }),
 "[project]/app/page.jsx [app-rsc] (ecmascript, Next.js Server Component)", ((__turbopack_context__) => {
