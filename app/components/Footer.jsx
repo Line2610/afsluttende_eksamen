@@ -23,35 +23,35 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Venstre kolonne - kontakt + sociale medier */}
             <div>
-              <h3 className="text-sm text-gray-200 mb-4">Avazura ApS</h3>
-              <p className="text-sm text-gray-300">+45 42 83 90 13</p>
-              <p className="mt-4 text-sm text-gray-300">
+              <p className="text-md text-gray-200 mb-4">Avazura ApS</p>
+              <p className="text-md text-gray-300">+45 42 83 90 13</p>
+              <p className="mt-4 text-md text-gray-300">
                 Christianshavns Torv 6,
                 <br />
                 1410, København K,
                 <br />
                 Danmark
               </p>
-              <p className="mt-4 text-sm text-gray-400">CVR: 44408562</p>
+              <p className="mt-4 text-md text-gray-400">CVR: 44408562</p>
 
-              <div className="mt-6 flex gap-4">
+              <div className="mt-10 flex gap-4">
                 {/* Instagram */}
-                <a aria-label="Instagram" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+                <a aria-label="Instagram" href="#" className="w-12 h-12 flex items-center justify-center bg-white/10 rounded">
                   <FaInstagram />
                 </a>
 
                 {/* Facebook */}
-                <a aria-label="Facebook" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+                <a aria-label="Facebook" href="#" className="w-12 h-12 flex items-center justify-center bg-white/10 rounded">
                   <FaFacebook />
                 </a>
 
                 {/* LinkedIn */}
-                <a aria-label="LinkedIn" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+                <a aria-label="LinkedIn" href="#" className="w-12 h-12 flex items-center justify-center bg-white/10 rounded">
                   <FaLinkedin />
                 </a>
 
                 {/* YouTube */}
-                <a aria-label="YouTube" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
+                <a aria-label="YouTube" href="#" className="w-12 h-12 flex items-center justify-center bg-white/10 rounded">
                   <FaYoutube />
                 </a>
               </div>
@@ -59,20 +59,15 @@ export default function Footer() {
 
             {/* Midt-kolonne - hovedlinks */}
             <div className="flex justify-center">
-              <ul className="space-y-2 text-sm text-gray-200">
+              <ul className="space-y-2 text-md text-gray-200">
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/" className="hover:underline">
                     Forside
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:underline">
                     Wordpress
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:underline">
-                    Kontakt
                   </a>
                 </li>
                 <li>
@@ -95,7 +90,7 @@ export default function Footer() {
 
             {/* Højre kolonne - juridiske links */}
             <div className="flex justify-end">
-              <ul className="space-y-2 text-sm text-gray-200">
+              <ul className="space-y-2 text-md text-gray-200">
                 <li>
                   <a href="#" className="hover:underline">
                     Handelsbetingelser
@@ -117,19 +112,19 @@ export default function Footer() {
 
           {/* badges + big logo row */}
           <div className="mt-12 flex flex-col-reverse md:flex-row items-center md:justify-between gap-6">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-8">
               {/* small badges - use real images in /public/logos */}
-              <div className="w-35 h-15 rounded flex items-center justify-center">
-                <Image src="/certified.webp" alt="Verified" width={200} height={50} />
+              <div className="w-45 h-15 rounded flex items-center justify-center">
+                <Image src="/assets/certified.webp" alt="Verified" width={200} height={50} />
               </div>
-              <div className="w-35 h-15 rounded flex items-center justify-center">
+              <div className="w-40 h-15 rounded flex items-center justify-center">
                 <Image src="/assets/b-mærke.webp" alt="B-mærket" width={400} height={100} />
               </div>
             </div>
 
             <div className="text-right">
-              {/* logo - replace with real svg in /public */}
-              <div className="w-58 opacity-90">
+              {/* logo  */}
+              <div className="w-65 opacity-90">
                 <Image src="/assets/logo.webp" alt="Avazura" width={240} height={48} />
               </div>
             </div>
