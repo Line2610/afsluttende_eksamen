@@ -1,11 +1,15 @@
 import Image from "next/image";
 import React from "react";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="text-white">
-      <div className="relative overflow-hidden text-center h-[400px]">
-        <Image src="/footer-baggrund.webp" alt="Footer baggrundsbillede" fill className="object-cover" priority />
+      <div className="relative overflow-hidden text-center h-100">
+        <Image src="/assets/footer-baggrund.webp" alt="Footer baggrundsbillede" fill className="object-cover" priority />
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/40 px-4">
           <h3 className="text-3xl text-white">Klar til at få flere kunder?</h3>
@@ -33,31 +37,22 @@ export default function Footer() {
               <div className="mt-6 flex gap-4">
                 {/* Instagram */}
                 <a aria-label="Instagram" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M17.5 6.5h.01" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <FaInstagram />
                 </a>
+
                 {/* Facebook */}
                 <a aria-label="Facebook" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 2h-3a4 4 0 00-4 4v3H8v4h3v7h4v-7h3l1-4h-4V6a1 1 0 011-1h3V2z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <FaFacebook />
                 </a>
+
                 {/* LinkedIn */}
                 <a aria-label="LinkedIn" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-2-2 2 2 0 00-2 2v6h-4v-12h4v1.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    <rect x="2" y="8" width="4" height="12" rx="1" stroke="currentColor" strokeWidth="1.2" />
-                  </svg>
+                  <FaLinkedin />
                 </a>
+
                 {/* YouTube */}
                 <a aria-label="YouTube" href="#" className="w-8 h-8 flex items-center justify-center bg-white/10 rounded">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="text-white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 8s-.2-1.4-.8-2a2.8 2.8 0 00-2-.8C17 5 12 5 12 5s-5 0-7.2.2a2.8 2.8 0 00-2 .8C2.2 6.6 2 8 2 8s-.2 1.8-.2 3.6V14c0 1.8.2 3.6.2 3.6s.2 1.4.8 2a2.8 2.8 0 002 .8C7 21 12 21 12 21s5 0 7.2-.2a2.8 2.8 0 002-.8c.6-.6.8-2 .8-2s.2-1.8.2-3.6V11.6C22.2 9.8 22 8 22 8z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M10 14l5-3-5-3v6z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
+                  <FaYoutube />
                 </a>
               </div>
             </div>
@@ -124,18 +119,18 @@ export default function Footer() {
           <div className="mt-12 flex flex-col-reverse md:flex-row items-center md:justify-between gap-6">
             <div className="flex items-center gap-4">
               {/* small badges - use real images in /public/logos */}
-              <div className="w-12 h-8 rounded flex items-center justify-center">
+              <div className="w-35 h-15 rounded flex items-center justify-center">
                 <Image src="/certified.webp" alt="Verified" width={200} height={50} />
               </div>
-              <div className="w-12 h-8 rounded flex items-center justify-center">
-                <Image src="/b-mærke.webp" alt="B-mærket" width={400} height={100} />
+              <div className="w-35 h-15 rounded flex items-center justify-center">
+                <Image src="/assets/b-mærke.webp" alt="B-mærket" width={400} height={100} />
               </div>
             </div>
 
             <div className="text-right">
               {/* logo - replace with real svg in /public */}
-              <div className="w-48 opacity-90">
-                <Image src="/logo.webp" alt="Avazura" width={240} height={48} />
+              <div className="w-58 opacity-90">
+                <Image src="/assets/logo.webp" alt="Avazura" width={240} height={48} />
               </div>
             </div>
           </div>
