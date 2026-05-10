@@ -1,0 +1,87 @@
+const services = [
+  {
+    title: "Online marketing",
+    description: "Målrettet markedsføring, der skaber vækst og øger din synlighed",
+    items: [
+      {
+        title: "Videoredigering",
+        description: "Professionelle videoer, der fanger",
+        href: "/videoredigering",
+      },
+      {
+        title: "Markedsføring",
+        description: "Strategisk markedsføring",
+        href: "/markedsføring",
+      },
+      {
+        title: "Søgemaskineoptimering",
+        description: "Bedre placeringer. Mere organisk trafik",
+        href: "/søgemaskineoptimering",
+      },
+    ],
+  },
+  {
+    title: "Digitale løsninger",
+    description: "Stærke websites og tekniske løsninger, der skaber resultater",
+    items: [
+      {
+        title: "Hosting",
+        description: "Hurtig, sikker og stabil hosting",
+        href: "/hosting",
+      },
+      {
+        title: "Software",
+        description: "Skræddersyet software til din forretning",
+        href: "/software",
+      },
+      {
+        title: "WordPress",
+        description: "Fleksible løsninger i verdens mest benyttede CMS",
+        href: "/wordpress",
+      },
+    ],
+  },
+];
+
+function ArrowIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 12h14" />
+      <path d="m13 6 6 6-6 6" />
+    </svg>
+  );
+}
+
+export default function YdelserCard() {
+  return (
+    <section aria-label="Ydelser" className="mx-auto max-w-7xl px-6 pb-24">
+      <div className="grid gap-10 lg:grid-cols-2">
+        {services.map((service) => (
+          <article key={service.title} className="rounded-[2.5rem] bg-white p-8 shadow-[0_12px_28px_rgba(0,0,0,0.14)] ring-1 ring-black/5 md:p-10">
+            <header className="px-1 pb-10 pt-2 md:px-8">
+              <h3 className="text-4xl font-light tracking-tight text-[#001949] md:text-[2.8rem]">{service.title}</h3>
+              <p className="mt-4 max-w-md text-lg leading-snug text-zinc-700 md:text-xl">{service.description}</p>
+            </header>
+
+            <div className="border-t border-zinc-200">
+              {service.items.map((item, index) => (
+                <div key={item.title} className={`flex items-center justify-between gap-6 px-1 py-7 md:px-8 ${index !== service.items.length - 1 ? "border-b border-zinc-200" : ""}`}>
+                  <div className="min-w-0">
+                    <a href={item.href} className="block text-2xl font-light text-zinc-800 hover:text-[#3A86FF] transition md:text-[2rem]">
+                      {item.title}
+                    </a>
+                    <p className="mt-1 max-w-lg text-base leading-snug text-zinc-600 md:text-lg">{item.description}</p>
+                  </div>
+
+                  <a href={item.href} aria-label={item.title} className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[#3A86FF] transition hover:bg-zinc-200">
+                    <ArrowIcon />
+                  </a>
+                </div>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
