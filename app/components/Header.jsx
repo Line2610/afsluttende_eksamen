@@ -14,16 +14,16 @@ export default function Header() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
-    <header className="bg-white/60 rounded-2xl shadow-lg backdrop-blur-md border border-zinc-200/50 dark:bg-zinc-900/50 dark:border-zinc-700/50 mt-6 mx-6">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
+    <header className="sticky top-4 bg-white/30 z-50 rounded-2xl shadow-lg backdrop-blur-md mt-6 mx-25">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
         {/* Logo til venstre */}
-        <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 shrink-0">
-          <img src="" alt="" className="h-8 w-8" />
+        <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-[#001949] shrink-0">
+          <img src="assets/avazura_logo.webp" alt="logo" className="h-22 w-15" />
           <span className="font-light tracking-[0.35em] uppercase">AVAZURA</span>
         </Link>
 
         {/* Navigation i midten */}
-        <nav aria-label="Primær navigation" className="flex-1 flex items-center justify-center gap-10 text-lg font-medium text-white">
+        <nav aria-label="Primær navigation" className="flex-1 flex items-center justify-center gap-15 text-lg font-medium text-black/80">
           {navigation.map((item) => (
             <Link key={item.href} href={item.href} className="transition-colors hover:text-[#3A86FF]">
               {item.label}
