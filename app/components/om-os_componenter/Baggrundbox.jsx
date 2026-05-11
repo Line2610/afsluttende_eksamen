@@ -6,7 +6,8 @@ export default function Bgbox() {
         <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
           Bygget på teknologi. <br></br> Drevet af nysgerrighed.
         </h2>
-        <p className="mt-6 text-lg leading-8">Avazura begyndte sin rejse med en vision om at revolutionere møbelhandel med en AL-drevet platform. I dag tager vi den samme innovative og datadrevne tilgang med ind i alle vores projekter, og skaber løsninger, der ikke bare ser godt ud, men også performer i virkeligheden. </p>
+        <p className="mt-6 text-lg leading-8">Avazura begyndte sin rejse med en vision om at revolutionere møbelhandel med en AL-drevet platform. <br></br>I dag tager vi den samme innovative og datadrevne tilgang med ind i alle vores projekter, og skaber løsninger,<br>
+        </br> der ikke bare ser godt ud, men også performer i virkeligheden. </p>
       </div>
     </section>
   );
