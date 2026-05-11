@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full overflow-hidden -mt-24" style={{ minHeight: "600px", backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/hero_om-os.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
+    <section className="relative w-full overflow-hidden -mt-40" style={{ minHeight: "600px", backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/assets/hero_om-os.webp')", backgroundSize: "cover", backgroundPosition: "center" }}>
       <div className="relative mx-auto max-w-6xl px-6 py-20 lg:px-8 z-10">
         <h1 className="text-4xl font-bold tracking-tight mt-20 text-white sm:text-6xl"> Vi skaber vækst gennem web, marketing og performance</h1>
         <p className="mt-6 text-lg leading-8 text-white">

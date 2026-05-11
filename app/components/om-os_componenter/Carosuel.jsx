@@ -48,12 +48,12 @@ export default function Carosuel() {
   };
 
   return (
-    <section className="bg-zinc-50 dark:bg-zinc-950 py-40 flex items-center justify-center">
+    <section className="py-40 flex items-center justify-center">
       <div className="w-full mx-auto px-6 lg:px-8 text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-zinc-700 dark:text-zinc-300 mb-12">Vi er et enageret team med ét mål. Din vækst.</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-black mb-12">Vi er et enageret team med ét mål. Din vækst.</h2>
 
         {/* Karusuel */}
-        <div className="bg-white dark:bg-zinc-900 rounded-lg p-16 mb-8 mx-auto relative max-w-5xl">
+        <div className="bg-white dark:bg-zinc-900 rounded-lg p-10 mb-8 mx-auto relative max-w-4xl">
           <button type="button" onClick={goToPreviousSlide} aria-label="Forrige billede" className="absolute left-4 top-1/2 -translate-y-1/2 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-zinc-900 shadow-lg transition hover:bg-white dark:bg-zinc-800 dark:text-white">
             <span className="text-2xl leading-none">‹</span>
           </button>

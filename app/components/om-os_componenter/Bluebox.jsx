@@ -2,8 +2,8 @@ export default function Boxsection() {
   return (
     <section className="w-full max-w-6xl mx-auto px-4">
       <div className="text-center mb-10 mt-20">
-        <p className="text-md font-semibold text-[#771041]">Sådan arbejder vi</p>
-        <h2 className="text-4xl font-semibold">Fra strategi til vækst</h2>
+        <p className="text-md font-semibold text-[#bd0a6d]">Sådan arbejder vi</p>
+        <h2 className="text-4xl font-semibold text-black">Fra strategi til vækst</h2>
       </div>
 
       <div className="grid gap-6 md:grid-cols-3 place-items-center">
