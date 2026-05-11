@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import HeroForside from "./components/Hero-forside";
-import Pains from "./components/Pains";
+import Pains from "./components/pains";
 import Vaerdier from "./components/Vaerdier";
 import YdelserCard from "./components/Ydelser-card";
 

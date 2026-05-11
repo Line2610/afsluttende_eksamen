@@ -2,7 +2,8 @@ import { LuClock4 } from "react-icons/lu";
 import { RiMegaphoneFill } from "react-icons/ri";
 import { IoGridOutline } from "react-icons/io5";
 import { BsQuestionLg } from "react-icons/bs";
-const pains = [
+
+const Pains = [
   {
     title: "Langsom hjemmeside",
     description: "Hver ekstra sekund koster dig kunder.",
