@@ -1,3 +1,4 @@
+import B2b from "./components/B2b";
 import Footer from "./components/Footer";
 import HeroForside from "./components/Hero-forside";
 import Pains from "./components/pains";
@@ -12,6 +13,7 @@ export default function Home() {
       <h2 className="text-center text-4xl mt-20 mb-20 text-gray-950">Hvad har du brug for hjælp til?</h2>
       <YdelserCard />
       <Vaerdier />
+      <B2b />
       <Footer />
     </main>
   );
