@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 import { FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
@@ -14,7 +15,9 @@ export default function Footer() {
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/40 px-4">
           <h3 className="text-3xl text-white">Klar til at få flere kunder?</h3>
           <h4 className="mt-4 text-white max-w-xl">Få en gratis analyse af din hjemmeside og se dine største forbedringsmuligheder</h4>
-          <button className="mt-8 bg-[#3A86FF] text-white py-2 px-4 rounded hover:bg-[#2a6ed0] cursor-pointer">Få gratis møde</button>
+          <Link href="/kontakt" className="mt-8 inline-block bg-[#3A86FF] text-white py-2 px-4 rounded hover:bg-[#2a6ed0]">
+            Få gratis møde
+          </Link>
         </div>
       </div>
 
