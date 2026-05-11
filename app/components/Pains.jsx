@@ -3,7 +3,7 @@ import { RiMegaphoneFill } from "react-icons/ri";
 import { IoGridOutline } from "react-icons/io5";
 import { BsQuestionLg } from "react-icons/bs";
 
-const Pains = [
+const pains = [
   {
     title: "Langsom hjemmeside",
     description: "Hver ekstra sekund koster dig kunder.",
@@ -44,7 +44,7 @@ export default function Pains() {
         {pains.map((pain) => (
           <article key={pain.title} className="flex items-start gap-5">
             <div className="relative flex h-20 w-20 shrink-0 items-center justify-center mt-4 rounded-full bg-[#eef1ff] shadow-sm md:h-16 md:w-16">
-              <div className="absolute inset-0 z-10 flex items-center justify-center rounded-full bg-[#]" />
+              <div className="absolute inset-0 z-10 flex items-center justify-center rounded-full bg-[#F3F4FD]" />
               <PainIcon type={pain.icon} />
             </div>
 
