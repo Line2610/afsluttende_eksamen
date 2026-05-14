@@ -11,7 +11,7 @@ const services = [
       {
         title: "Markedsføring",
         description: "Strategisk markedsføring",
-        href: "/markedsføring",
+        href: "/markedsforing",
       },
       {
         title: "Søgemaskineoptimering",
