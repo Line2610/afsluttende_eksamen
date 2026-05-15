@@ -55,13 +55,13 @@ export default function HeroForside() {
 
       <section className="bg-[#f4f7fb] px-6 py-10 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <p className="text-center text-2xl font-semibold text-[#7d174f] sm:text-3xl">Trusted by 20+ virksomheder</p>
+          <p className="text-center text-2xl font-semibold text-[#7d174f] sm:text-xl">Trusted by 20+ virksomheder</p>
 
           <div className="mt-12 grid items-center gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            <Image src="/assets/cg_logo.png" alt="Carlsen Gulve" width={240} height={64} className="h-16 w-auto object-contain" />
-            <Image src="/assets/k_logo.png" alt="Kolumbia" width={240} height={64} className="h-16 w-auto object-contain" />
-            <Image src="/assets/mvs_logo.png" alt="Mens Vi Strikker" width={240} height={64} className="h-16 w-auto object-contain" />
-            <Image src="/assets/ttc_logo.png" alt="Trekantens Trailercenter" width={240} height={64} className="h-16 w-auto object-contain" />
+            <Image src="/assets/cg_logo.png" alt="Carlsen Gulve" width={240} height={64} className="h-12 w-auto object-contain" />
+            <Image src="/assets/k_logo.png" alt="Kolumbia" width={240} height={64} className="h-12 w-auto object-contain" />
+            <Image src="/assets/mvs_logo.png" alt="Mens Vi Strikker" width={240} height={64} className="h-12 w-auto object-contain" />
+            <Image src="/assets/ttc_logo.png" alt="Trekantens Trailercenter" width={240} height={64} className="h-12 w-auto object-contain" />
           </div>
         </div>
       </section>
