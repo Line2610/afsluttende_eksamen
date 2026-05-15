@@ -12,7 +12,7 @@ export default function HeroForside() {
 
         <div className="relative z-10 mx-auto flex max-w-6xl flex-col justify-between px-6 py-12 lg:px-8" style={{ minHeight: "560px" }}>
           <div className="max-w-4xl pt-4 text-white">
-            <h1 className="text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl mt-30">
+            <h1 className="text-4xl font-light tracking-tight sm:text-4xl lg:text-6xl mt-35">
               <span className="block">Vi skaber flere kunder</span>
               <span className="block whitespace-nowrap">gennem web, ads og performance</span>
             </h1>
@@ -26,25 +26,25 @@ export default function HeroForside() {
 
         <div className="relative z-20 w-full">
           <div className="w-full border-t border-white/10 bg-white/12 backdrop-blur-sm">
-            <div className="mr-23 mx-auto max-w-6xl grid gap-6 px-6 py-6 text-white sm:grid-cols-3 sm:gap-8 sm:px-10">
+            <div className="mr-23 mx-auto max-w-6xl grid gap-6 px-4 py-4 text-white sm:grid-cols-3 sm:gap-8 sm:px-10">
               <div className="flex items-center gap-4">
-                <FiZap className="h-12 w-12 shrink-0 text-[#3A86FF]" />
+                <FiZap className="h-10 w-10 shrink-0 text-[#3A86FF]" />
                 <div>
-                  <p className="text-2xl font-light sm:text-3xl">4.2s → 1.3s</p>
+                  <p className="text-2xl font-light sm:text-2xl">4.2s → 1.3s</p>
                   <p className="text-lg text-white/90">Loadtid forbedret</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <FiTrendingUp className="h-12 w-12 shrink-0 text-[#3A86FF]" />
+                <FiTrendingUp className="h-10 w-10 shrink-0 text-[#3A86FF]" />
                 <div>
-                  <p className="text-2xl font-light sm:text-3xl">+32%</p>
+                  <p className="text-2xl font-light sm:text-2xl">+32%</p>
                   <p className="text-lg text-white/90">Flere leads</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <FiUsers className="h-12 w-12 shrink-0 text-[#3A86FF]" />
+                <FiUsers className="h-10 w-10 shrink-0 text-[#3A86FF]" />
                 <div>
-                  <p className="text-2xl font-light sm:text-3xl">Én partner</p>
+                  <p className="text-2xl font-light sm:text-2xl">Én partner</p>
                   <p className="text-lg text-white/90">Web, ads og SEO</p>
                 </div>
               </div>
