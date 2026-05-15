@@ -4,7 +4,7 @@ import { FiTrendingUp, FiUsers, FiZap } from "react-icons/fi";
 export default function HeroForside() {
   return (
     <>
-      <section className="relative w-full overflow-hidden -mt-25">
+      <section className="relative w-full overflow-hidden -mt-35">
         <video className="absolute inset-0 h-full w-full object-cover" autoPlay muted loop playsInline poster="/assets/hero_forside.webp">
           <source src="/assets/Waves_hero.mp4" type="video/mp4" />
         </video>
@@ -12,7 +12,7 @@ export default function HeroForside() {
 
         <div className="relative z-10 mx-auto flex max-w-6xl flex-col justify-between px-6 py-12 lg:px-8" style={{ minHeight: "560px" }}>
           <div className="max-w-4xl pt-4 text-white">
-            <h1 className="text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl mt-20">
+            <h1 className="text-4xl font-light tracking-tight sm:text-5xl lg:text-6xl mt-30">
               <span className="block">Vi skaber flere kunder</span>
               <span className="block whitespace-nowrap">gennem web, ads og performance</span>
             </h1>
