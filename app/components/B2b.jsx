@@ -36,7 +36,7 @@ const cards = [
 
 export default function B2b() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-8">
+    <section className="mx-auto max-w-6xl px-6 py-8 mb-30">
       <h3 className="text-black text-2xl text-center mb-3">Vi hjælper virksomheder med vækstambitioner</h3>
       <p className="text-black mb-10 text-center">Fra restauranter og webshops til B2B og startups tilpasser vi vores løsninger til din branche – med fokus på målbar vækst.</p>
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
