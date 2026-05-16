@@ -1,85 +1,54 @@
-const services = [
-  {
-    title: "Online marketing",
-    description: "Målrettet markedsføring, der skaber vækst og øger din synlighed",
-    items: [
-      {
-        title: "Videoredigering",
-        description: "Professionelle videoer, der fanger",
-        href: "/videoredigering",
-      },
-      {
-        title: "Markedsføring",
-        description: "Strategisk markedsføring",
-        href: "/markedsforing",
-      },
-      {
-        title: "Søgemaskineoptimering",
-        description: "Bedre placeringer. Mere organisk trafik",
-        href: "/søgemaskineoptimering",
-      },
-    ],
-  },
-  {
-    title: "Digitale løsninger",
-    description: "Stærke websites og tekniske løsninger, der skaber resultater",
-    items: [
-      {
-        title: "Hosting",
-        description: "Hurtig, sikker og stabil hosting",
-        href: "/hosting",
-      },
-      {
-        title: "Software",
-        description: "Skræddersyet software til din forretning",
-        href: "/software",
-      },
-      {
-        title: "WordPress",
-        description: "Fleksible løsninger i verdens mest benyttede CMS",
-        href: "/wordpress",
-      },
-    ],
-  },
-];
+"use client";
 
-function ArrowIcon() {
+import Link from "next/link";
+import { IoIosCheckmarkCircle } from "react-icons/io";
+
+function CheckIcon({ colorClass = "h-6 w-6 text-gray-800" }) {
+  return <IoIosCheckmarkCircle className={colorClass} />;
+}
+
+export function YdelserCard({ title, subtitle, icon, iconBgClass = "bg-[#F1DDBB]", items = [], price, period = "/måned", buttonLabel = "Bestil nu", buttonHref = "/kontakt", itemIcon: ItemIcon = null, itemIconClass = "h-7 w-7" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14" />
-      <path d="m13 6 6 6-6 6" />
-    </svg>
+    <article className="flex h-full flex-col rounded-2xl bg-white p-5 shadow-[0_4px_16px_rgba(0,0,0,0.18)] ring-1 ring-black/10 md:p-6">
+      <header>
+        <div className="flex items-center gap-3">
+          <div className={`flex h-14 w-14 items-center justify-center rounded-full ${iconBgClass}`}>{icon}</div>
+          <div>
+            <h3 className="text-2xl font-medium text-gray-950 md:text-3xl">{title}</h3>
+            <p className="text-sm text-gray-800 md:text-base">{subtitle}</p>
+          </div>
+        </div>
+      </header>
+
+      <ul className="mt-4 flex-1 space-y-0">
+        {items.map((item) => (
+          <li key={item} className="flex text-gray-800 items-start gap-3 border-t border-gray-300 py-3 text-xs md:text-base">
+            <span className="shrink-0 pt-0.5 text-gray-800">{ItemIcon ? <ItemIcon className={itemIconClass} /> : <CheckIcon className={`h-6 w-6 text-gray-800`} />}</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-auto flex items-end justify-between gap-4">
+        <div className="flex items-end gap-2">
+          <span className="text-2xl ml-4 font-semibold text-gray-950 md:text-3xl">{price}</span>
+          <span className="pb-0.5 text-sm text-gray-950/90">{period}</span>
+        </div>
+      </div>
+
+      <Link href={buttonHref} className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-[#3A86FF] px-6 py-2.5 text-base font-semibold text-white transition hover:bg-[#2c73e8]">
+        {buttonLabel}
+      </Link>
+    </article>
   );
 }
 
-export default function YdelserCard() {
+export function YdelserGrid({ plans = [] }) {
   return (
-    <section aria-label="Ydelser" className="mx-auto max-w-7xl px-6 pb-16">
-      <div className="grid gap-12 lg:grid-cols-2">
-        {services.map((service) => (
-          <article key={service.title} className="rounded-2xl bg-white p-6 shadow-[0_8px_20px_rgba(0,0,0,0.12)] ring-1 ring-black/5 md:p-8">
-            <header className="px-1 pb-8 pt-2 md:px-6">
-              <h3 className="text-xl font-light tracking-tight text-[#001949] md:text-[2rem]">{service.title}</h3>
-              <p className="mt-3 max-w-md text-base leading-snug text-zinc-700 md:text-lg">{service.description}</p>
-            </header>
-
-            <div className="border-t border-zinc-200">
-              {service.items.map((item, index) => (
-                <div key={item.title} className={`flex items-center justify-between gap-6 px-1 py-5 md:px-6 ${index !== service.items.length - 1 ? "border-b border-zinc-200" : ""}`}>
-                  <div className="min-w-0">
-                    <a href={item.href} className="block text-xl font-light text-zinc-800 hover:text-[#3A86FF] transition md:text-2xl">
-                      {item.title}
-                    </a>
-                    <p className="mt-1 max-w-lg text-sm leading-snug text-zinc-600 md:text-base">{item.description}</p>
-                  </div>
-
-                  <a href={item.href} aria-label={item.title} className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-[#3A86FF] transition hover:bg-zinc-200">
-                    <ArrowIcon />
-                  </a>
-                </div>
-              ))}
-            </div>
-          </article>
+    <section className="mx-auto max-w-7xl px-6 py-16">
+      <div className="grid gap-8 lg:grid-cols-3">
+        {plans.map((plan) => (
+          <YdelserCard key={plan.title} {...plan} />
         ))}
       </div>
     </section>
