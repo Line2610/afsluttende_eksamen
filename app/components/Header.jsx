@@ -14,8 +14,8 @@ export default function Header() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   return (
-    <header className="sticky top-4 bg-white/30 z-50 rounded-2xl shadow-lg backdrop-blur-md mt-6 mx-25">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-4 lg:px-8">
+    <header className="sticky top-4 bg-white/30 z-50 rounded-2xl shadow-lg backdrop-blur-md mt-4 mx-25">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-2 py-2 lg:px-8">
         {/* Logo til venstre */}
         <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-[#001949] shrink-0">
           <img src="assets/avazura_logo.webp" alt="logo" className="h-22 w-15" />
